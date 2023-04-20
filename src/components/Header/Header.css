@@ -33,6 +33,8 @@
   background-color: #121212;
   border-radius: 22px;
   padding-left: 23px;
+  outline: none;
+  color: #fff;
 }
 
 .sidebar_list {
