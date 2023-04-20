@@ -1,6 +1,8 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, } from "react-icons/gi";
+import {AiOutlineHome } from 'react-icons/ai'
 import { BsSearch } from 'react-icons/bs'
+import SidebarItem from "../SidebarItems/sidebarItems";
 import "./Header.css";
 
 const Header = () => {
@@ -80,13 +82,65 @@ const Header = () => {
 
           <div className="App">
             <div className={`sidebar ${isOpen ? "open" : ""}`}>
-              <ul>
-                <li>Home</li>
-                <li>Trending</li>
-                <li>Subscriptions</li>
-                <li>Library</li>
-                <li>History</li>
-                <li>Watch later</li>
+              <ul className="sidebar_list">
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Home"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Trending"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Subscription"
+                />
+
+                <hr className="sidebar_line" />
+
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Library"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="History"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Watch later"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Favourites"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Liked videos"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Music"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Games"
+                />
+                <SidebarItem
+                  className="sidebar_item"
+                  icon={<AiOutlineHome />}
+                  label="Show more"
+                />
               </ul>
             </div>
           </div>
